@@ -1,0 +1,104 @@
+
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-app {
+  font-family: "Tele2DisplaySerif";
+  width: 900px;
+  margin: 5% auto;
+  display: grid;
+}
+
+img {
+  width: inherit;
+}
+
+.mobile-app__title {
+  grid-row: 1;
+  margin: auto;
+  font-size: 28px;
+  text-align: center;
+}
+
+.mobile-app__content {
+  display: grid;
+}
+
+.mobile-app__application-screen {
+  text-align: center;
+  grid-row: 1;
+  width: 300px;
+  margin: 30px auto;
+}
+
+.mobile-app__description {
+  text-align: center;
+  grid-row: 2;
+}
+
+.mobile-app__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+  padding: 0 30%;
+  grid-row: 3;
+}
+
+.mobile-app__buttons-download-instruction-btn {
+  color: #fff;
+  background: #000000;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.6rem 1.3rem;
+  text-align: center;
+  font-family: "tele2_textsans_bold";
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: .05rem;
+  white-space: nowrap;
+  cursor: pointer;
+  border-radius: 3rem;
+  border: 0.1rem solid #000000;
+  transition: .3s;
+  font-family: "Tele2TextSansBold";
+  height: 17px;
+}
+
+@media(max-width: 900px) {
+  .mobile-app {
+    width: 100%;
+  }
+}
+
+@media(max-width: 750px) {
+  .mobile-app__title {
+    font-size: 22px;
+  }
+
+  .mobile-app__buttons {
+    justify-content: space-around;
+    padding: 0 20%;
+  }
+}
+
+@media(max-width:600px) {
+  .mobile-app__buttons {
+    padding: 0;
+  }
+}
+
+@font-face {
+  font-family: "Tele2DisplaySerif";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/tele2_displayserif-regular.woff");
+}
+
+@font-face {
+  font-family: "Tele2TextSansBold";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/tele2_textsans-bold.woff");
+}
